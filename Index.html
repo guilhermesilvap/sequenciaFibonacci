@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>      
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Exercícios Target</title>
+</head>
+<body>
+<div>
+  Respostas no Console (ctrl+shift+c)
+</div>
+<script>
+
+const num = parseFloat(prompt("Digite um número para verificarmos se ele pertence a sequência de Fibonacci:"))
+let soma = 0 
+let anterior = 0
+let proximo = 1 
+let contador = 0 
+for(i=0; i<=num; i++){
+soma=(anterior+proximo)
+anterior = proximo
+proximo = soma
+
+if(soma==num){
+  contador ++
+  console.log("O número pertence a sequência de Fibonacci")
+}
+}
+
+if(contador==0){
+  console.log("O número não pertence a sequência de Fibonacci")
+}
+
+
+
+
+
+
+</script>
+</body> 
+</html>
